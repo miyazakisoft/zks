@@ -7,7 +7,7 @@
 </head>
 <title>KSS</title>
 <body>
-
+  <script type="text/javascript" src="./checklist.js"></script>
 
   <form enctype="multipart/form-data" method="post" action="http://localhost:8080/zks/webapi/multipleFiles">
           <div><input type="file" name="file"/></div>
@@ -17,6 +17,7 @@
 
 <font size="7">株式会社○○○○</font>
 
+<input type="button" value="チェックボックスロック" onclick="check_button_click()"/>
 
 <table class="sampleTable" border="1" cellspacing="0">
   <tr>
@@ -35,24 +36,24 @@
     <td>設定</td>
     <td>設定 -> 一般 -> 情報からバージョンXXXになっていること</td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P01-5001-C1" id="P01-5001-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P01-5001-C2" id="P01-5001-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P01-5002-C1" id="P01-5002-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P01-5002-C2" id="P01-5002-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P01-5003-C1" id="P01-5003-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P01-5003-C2" id="P01-5003-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P01-5004-C1" id="P01-5004-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P01-5004-C2" id="P01-5004-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P01-5005-C1" id="P01-5005-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P01-5005-C2" id="P01-5005-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
   </tr>
 
@@ -61,24 +62,24 @@
     <td>設定</td>
     <td>設定 -> キーボード -> 日本語 - かな と 絵文字 のみになっていること</td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P02-5001-C1" id="P02-5001-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P02-5001-C2" id="P02-5001-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P02-5002-C1" id="P02-5002-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P02-5002-C2" id="P02-5002-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P02-5003-C1" id="P02-5003-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P02-5003-C2" id="P02-5003-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P02-5004-C1" id="P02-5004-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P02-5004-C2" id="P02-5004-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P02-5005-C1" id="P02-5005-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P02-5005-C2" id="P02-5005-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
   </tr>
 
@@ -87,24 +88,24 @@
     <td>設定</td>
     <td>設定 -> プライバシー -> 位置情報サービスがオンになっていること</td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P03-5001-C1" id="P03-5001-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P03-5001-C2" id="P03-5001-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P03-5002-C1" id="P03-5002-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P03-5002-C2" id="P03-5002-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P03-5003-C1" id="P03-5003-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P03-5003-C2" id="P03-5003-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P03-5004-C1" id="P03-5004-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P03-5004-C2" id="P03-5004-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P03-5005-C1" id="P03-5005-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P03-5005-C2" id="P03-5005-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
   </tr>
 
@@ -113,24 +114,24 @@
     <td>設定</td>
     <td>設定 -> iTunes StoreとApp Store -> Appダウンロードが常に許可になっていること</td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P04-5001-C1" id="P04-5001-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P04-5001-C2" id="P04-5001-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P04-5002-C1" id="P04-5002-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P04-5002-C2" id="P04-5002-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P04-5003-C1" id="P04-5003-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P04-5003-C2" id="P04-5003-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P04-5004-C1" id="P04-5004-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P04-5004-C2" id="P04-5004-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P04-5005-C1" id="P04-5005-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P04-5005-C2" id="P04-5005-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
   </tr>
 
@@ -139,27 +140,26 @@
     <td>プロファイルの適用</td>
     <td> 設定 -> 一般 -> プロファイルとデバイス管理 -> デバイスマネージャがあること</td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P05-5001-C1" id="P05-5001-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P05-5001-C2" id="P05-5001-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P05-5002-C1" id="P05-5002-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P05-5002-C2" id="P05-5002-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P05-5003-C1" id="P05-5003-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P05-5003-C2" id="P05-5003-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P05-5004-C1" id="P05-5004-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P05-5004-C2" id="P05-5004-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
     <td>
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
-      <input type="checkbox" name="con" style="width:30px;height:30px;">
+      <input type="checkbox" name="P05-5005-C1" id="P05-5005-C1" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
+      <input type="checkbox" name="P05-5005-C2" id="P05-5005-C2" style="width:30px;height:30px;" onchange="checkbox_click(this.name)">
     </td>
   </tr>
-
 
 </table>
 

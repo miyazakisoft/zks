@@ -3,15 +3,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="checklist.css">
+  <link rel="stylesheet" href="css/numberselect.css">
 </head>
 <title>ZKS</title>
 <body>
+<button type="button" class="listselect_button" id = "listselect_button">リスト選択画面</button><br>
 
-<font size="7">株式会社○○○○</font><br>
+<font size="7">○○○○交通</font><br>
+
+<button type="button" class="manual_button" id = "manual_button">手順書の確認</button>
+
+<br><br>
 <font size="4">キッティングチェックの対象番号を選択してください。</font>
+<br>
 
-
+<button>前へ</button><button>次へ</button>
 <table class="sampleTable" border="1" cellspacing="0">
   <tr>
     <th width="80">電話番号</th>
@@ -51,7 +57,9 @@
 
 </table>
 
-<button onclick="location.href='./checklist.html'">確定</button>
+<button type="button" class="confirm_button" id = "confirm_button">確定</button>
 
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/numberselect.js"></script>
 </body>
 </html>

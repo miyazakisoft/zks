@@ -1,0 +1,19 @@
+.sampleTable {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.sampleTable th,
+.sampleTable td {
+  border: 1px solid #CCCCCC;
+  padding: 5px 10px;
+  text-align: left;
+}
+.sampleTable th {
+  background-color: #FFFFFF;
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* tbody内のセルより手前に表示する */
+  z-index: 1;
+}

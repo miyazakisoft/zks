@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/listselect.css">
+</head>
+<title>ZKS</title>
+<body>
+
+  <button onclick="location.href='./login.html'">ログアウト</button>
+
+  <script>
+    /**
+    * Get the URL parameter value
+    *
+    * @param  name {string} パラメータのキー文字列
+    * @return  url {url} 対象のURL文字列（任意）
+    */
+    function getParam(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    document.write("グループID: " + getParam("group_id") + "様がログインしています");
+  </script>
+  <br>
+
+  <table class="score_table" border="1" cellspacing="0">
+    <tr>
+      <th width="100">社員名</th>
+      <th width="100">KT合計</th>
+      <th width="100">7月</th>
+      <th width="100">6月</th>
+      <th width="100">5月</th>
+    </tr>
+    <tr>
+      <td>宮崎</td>
+      <td>120</td>
+      <td>70</td>
+      <td>30</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>大○</td>
+      <td>300</td>
+      <td>200</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>浜○</td>
+      <td>100</td>
+      <td>100</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+<br><br>
+    <!--<input type="button" value="チェックボックスロック" onclick="check_button_click()"/>-->
+    <button type="button" class="listadd_button" id = "listadd_button">キッティングリストの追加</button>
+
+  <br>
+  <font size="4">キッティングチェックの対象のお客様を選択してください。</font>
+
+<br><br>
+<button>前へ</button><button>次へ</button>
+<table class="project_table" border="1" cellspacing="0">
+  <tr>
+    <th width="50">PJ</th>
+    <th width="200">お客様名</th>
+    <th width="50">状態</th>
+    <th width="50">選択</th>
+  </tr>
+
+  <tr>
+    <td>PJ1</td>
+    <td>○○○○交通</td>
+    <td>未完了</td>
+    <td><button type="button" class="listadd_button" name="pj1" id="pj1" onclick="check_button_click(this.name)">選択</button></td>
+
+    <!--<button onclick="location.href='./numberselect.html'">選択</button>-->
+  </tr>
+
+  <tr>
+    <td>PJ2</td>
+    <td>○○銀行</td>
+    <td>完了</td>
+    <td><button type="button" class="listadd_button" name="pj2" id="pj2" onclick="check_button_click(this.name)">選択</button></td>
+  </tr>
+
+</table>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/listselect.js"></script>
+</body>
+</html>

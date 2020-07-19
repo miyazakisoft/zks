@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<title>ZKS</title>
+<body>
+  <button type="button" class="listselect_button" id = "listselect_button">戻る</button>
+  <br>
+  <font size="7">キッティングリストの登録</font><br>
+
+  <p>
+    お客様名：<input type="text" name="customer_name" size="40" maxlength="20">
+  </p>
+
+  <form enctype="multipart/form-data" method="post" action="http://localhost:8080/zks/webapi/multipleFiles">
+          <div><input type="file" name="file"/></div>
+          <input type="submit" value="登録">
+  </form>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/listadd.js"></script>
+</body>
+</html>

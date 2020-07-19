@@ -21,7 +21,6 @@ repositories {
 	jcenter()
 }
 
-
 dependencies {
 	compile fileTree(dir: 'lib',
 		includes: ['**/*.jar'],
@@ -58,7 +57,7 @@ task initializeProjectFiles {
 task deploy(type: Copy, dependsOn: war) {
 	setGroup('build')
 	from 'build/libs'
-	into '/Users/kou/Desktop/kss/9.4.11.v20180605/libexec/webapps'
+	into '${user.home}/../../../Desktop/zks/9.4.11.v20180605/libexec/webapps'
 }
 
 tasks.eclipseClasspath.dependsOn(cleanEclipseClasspath)
